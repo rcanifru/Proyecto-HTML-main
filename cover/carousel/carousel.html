@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfumes Bleu de Chanel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+
+    <style>
+      body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #5a5a5a;
+      }
+
+      .navbar {
+        background-color: #0A1D3A !important;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+
+      #myCarousel {
+        max-width: 1900px;
+        margin: auto;
+      }
+
+      .carousel-item {
+        position: relative;
+        height: 1000px; 
+      }
+
+      .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .carousel-caption {
+        bottom: 2rem;
+        z-index: 10;
+      }
+
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .featurette-divider {
+        margin: 5rem 0;
+      }
+
+      .featurette-heading {
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -.05rem;
+      }
+
+      .video-section {
+        padding: 3rem 0;
+        text-align: center;
+        background-color: #f8f9fa;
+      }
+
+      .video-container {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .featured-image-section {
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .featured-image-container {
+        max-width: 1200px; 
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .featured-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 8px solid #0A1D3A; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      }
+
+      .btn-secondary {
+        background-color: #0A1D3A !important;
+        border-color: #0A1D3A !important;
+        color: white !important;
+      }
+
+      .btn-secondary:hover {
+        background-color: #0c2550 !important;
+        border-color: #0c2550 !important;
+      }
+
+      @media (min-width: 40em) {
+        .carousel-caption p {
+          margin-bottom: 1.25rem;
+          font-size: 1.25rem;
+          line-height: 1.4;
+        }
+
+        .featurette-heading {
+          font-size: 50px;
+        }
+      }
+
+      @media (min-width: 62em) {
+        .featurette-heading {
+          margin-top: 7rem;
+        }
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="http://127.0.0.1:3000/cover/cover.html">BLEU DE CHANEL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item"><a class="nav-link" href="./carousel.html">Perfumes</a></li>
+            </ul>
+
+            <!-- logo chanel -->
+            <div class="d-flex align-items-center">
+              <img src="./ImagenCarrusel/logo.png" alt="Logo" style="height: 50px;">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- CARRUSEL -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./ImagenCarrusel/fondo1.png" alt="Primera imagen">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>BLEU DE CHANEL</h1>
+                <p>Una estela poderosa y sofisticada que revela a un hombre refinado e intensamente masculino.</p>
+                <p><a class="btn btn-lg btn-primary" href="#fragancias">Conoce las fragancias</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./ImagenCarrusel/fondo2.webp" alt="Segunda imagen">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>EL RODAJE</h1>
+                <p>Timothée Chalamet en el plató del vídeo BLEU DE CHANEL. Todos los matices de un hombre atrapado entre la fama y la verdad.
+                  </p>
+                <p><a class="btn btn-lg btn-primary" href="#video">Conoce el rodaje</a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./ImagenCarrusel/fondo3.jpg" alt="Tercera imagen">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Timothée Chalamet</h1>
+                <p>Descubre al nuevo embajador de la fragancia icónica y seductora BLEU DE CHANEL</p>
+                <p><a class="btn btn-lg btn-primary" href="#descripcion">Conócelo</a></p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Comprar -->
+      <div class="container marketing mt-5" id="fragancias">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./ImagenCarrusel/parfum.png" alt="Parfum" class="box-shadow" width="300" height="300" style="object-fit: cover;">
+            <h2>Parfum</h2>
+            <p>BLEU DE CHANEL Parfum, aromático intensamente amaderado con notas poderosas y refinadas.</p>
+            <p><a class="btn btn-secondary" href="./pricing/pricing.html">Comprar &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./ImagenCarrusel/edp.png" alt="Eau de Parfum" class="box-shadow" width="300" height="300" style="object-fit: cover;">
+            <h2>Eau de Parfum</h2>
+            <p>Una firma sensual que evoca a un hombre cautivador. BLEU DE CHANEL Eau de Parfum es un voluptuoso aromático amaderado.</p>
+            <p><a class="btn btn-secondary" href="#">Comprar &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./ImagenCarrusel/edt.png" alt="Eau de Toilette" class="box-shadow" width="300" height="300" style="object-fit: cover;">
+            <h2>Eau de Toilette</h2>
+            <p>Un aromático amaderado en un frasco de un azul intenso y misterioso.</p>
+            <p><a class="btn btn-secondary" href="#">Comprar &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Embajador TC -->
+        <div class="row featurette" id="descripcion">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">BLEU DE CHANEL es una fragancia amaderada y aromática que simboliza la libertad, fuerza y elegancia del hombre. Disponible en una línea completa para afeitado y cuerpo.<span class="text-muted"></span></h2>
+          </div>
+          <div class="col-md-5">
+            <img src="./ImagenCarrusel/embajador3.jpg" class="img-fluid mx-auto" alt="500x500">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Las facetas de un hombre que forja su propio camino. Un conflicto entre la celebridad y la autenticidad, uniendo la sensibilidad de Timothée Chalamet con la virtuosidad de Martin Scorsese.<span class="text-muted"></span></h2>
+            <p class="lead"></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="./ImagenCarrusel/embajador.jpg" class="img-fluid mx-auto" alt="500x500">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Martin Scorsese y Timothée Chalamet se revelan en el set del video BLEU DE CHANEL. Imágenes exclusivas captadas en Nueva York por Francesca Scorsese.<span class="text-muted"></span></h2>
+            <p class="lead"></p>
+          </div>
+          <div class="col-md-5">
+            <img src="./ImagenCarrusel/embajador2.jpg" class="img-fluid mx-auto" alt="500x500">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- video bleu de parfum -->
+        <div class="video-section" id="video">
+          <h2 class="mb-4">BLEU DE CHANEL</h2>
+          <h2 class="mb-4">La película de Martin Scorsese protagonizada por Timothée Chalamet.</h2>
+          
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/mR1fQeRqUEY" title="BLEU DE CHANEL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="mt-3">Descubre la historia detrás de BLEU DE CHANEL</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- imagen del fondo -->
+        <div class="featured-image-section" id="imagen-destacada">
+          <h2 class="mb-4">LA ESENCIA DE BLEU DE CHANEL</h2>
+          <div class="featured-image-container">
+            <img src="./ImagenCarrusel/fondofinal.webp" alt="Imagen destacada de BLEU DE CHANEL" class="featured-image">
+            <p class="mt-4">Una fragancia atemporal para el hombre que desafía las convenciones</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+
+      <!-- texto del footer -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Volver arriba</a></p>
+        <p>&copy; 2000–2025 Elizalde, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

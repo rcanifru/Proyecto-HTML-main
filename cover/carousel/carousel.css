@@ -1,0 +1,125 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-top: 3.5rem; /* Aumentado para la barra de navegación más grande */
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* Navbar color personalizado */
+.navbar {
+  background-color: #0A1D3A !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Cambiar color de los botones */
+.btn-primary {
+  background-color: #0A1D3A;
+  border-color: #0A1D3A;
+}
+
+.btn-primary:hover {
+  background-color: #08213B;
+  border-color: #08213B;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 2rem; /* Mayor separación horizontal */
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.product-container {
+  margin: 0 -1.5rem;
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* Sección de video de YouTube */
+.video-section {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.video-container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción exacta 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
